@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:syncfusion="clr-namespace:Syncfusion.Maui.RadialMenu;assembly=Syncfusion.Maui.RadialMenu"
+             x:Class="MAUI_RadialMenu.MainPage">
+
+    <syncfusion:SfRadialMenu AnimationDuration="500"
+                             IsOpen="True"
+                             Point="0,150"
+                             CenterButtonSize="100"
+                             CenterButtonRadius="50"
+                             CenterButtonText="Edit"
+                             RimRadius="250"
+                             CenterButtonBackFontAttributes="Bold"
+                             CenterButtonBackFontSize="20"
+                             >
+        <syncfusion:SfRadialMenu.Items>
+            <syncfusion:SfRadialMenuItem Text="Copy" ItemTapped="SfRadialMenuItem_ItemTapped"/>
+            <syncfusion:SfRadialMenuItem Text="Past" ItemTapped="SfRadialMenuItem_ItemTapped"/>
+            <syncfusion:SfRadialMenuItem Text="Paint" ItemTapped="SfRadialMenuItem_ItemTapped"/>
+            <syncfusion:SfRadialMenuItem Text="Crop" ItemTapped="SfRadialMenuItem_ItemTapped"/>
+            <syncfusion:SfRadialMenuItem Text="Cut" ItemTapped="SfRadialMenuItem_ItemTapped" />
+        </syncfusion:SfRadialMenu.Items>
+        
+    </syncfusion:SfRadialMenu>
+
+
+</ContentPage>
